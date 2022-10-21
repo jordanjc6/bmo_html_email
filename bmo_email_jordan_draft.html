@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Simple Transactional Email</title>
+    <style>
+@media only screen and (max-width: 620px) {
+  table.body h1 {
+    font-size: 28px !important;
+    margin-bottom: 10px !important;
+  }
+
+  table.body p,
+table.body ul,
+table.body ol,
+table.body td,
+table.body span,
+table.body a {
+    font-size: 16px !important;
+  }
+
+  table.body .wrapper,
+table.body .article {
+    padding: 10px !important;
+  }
+
+  table.body .content {
+    padding: 0 !important;
+  }
+
+  table.body .container {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  table.body .main {
+    border-left-width: 0 !important;
+    border-radius: 0 !important;
+    border-right-width: 0 !important;
+  }
+
+  table.body .btn table {
+    width: 100% !important;
+  }
+
+  table.body .btn a {
+    width: 100% !important;
+  }
+
+  table.body .img-responsive {
+    height: auto !important;
+    max-width: 100% !important;
+    width: auto !important;
+  }
+}
+@media all {
+  .ExternalClass {
+    width: 100%;
+  }
+
+  .ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+    line-height: 100%;
+  }
+
+  .apple-link a {
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    text-decoration: none !important;
+  }
+
+  #MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  .btn-primary table td:hover {
+    background-color: #34495e !important;
+  }
+
+  .btn-primary a:hover {
+    background-color: #34495e !important;
+    border-color: #34495e !important;
+  }
+
+  .section {
+
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.city {
+    color: #0079C1;
+    font-size: 18px;
+}
+
+.speaker {
+    color: #0079C1;
+}
+
+.col-heading {
+    margin-bottom: 0;
+    color: #4C4E52;
+}
+
+.date {
+    color: #4C4E52;
+}
+
+.s6 { color: #FFF; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
+
+.s7 { color: #FFF; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; }
+
+}
+</style>
+  </head>
+  <body style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">This is preheader text. Some clients will show this text as a preview.</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f6f6f6; width: 100%;" width="100%" bgcolor="#f6f6f6">
+      <tr>
+        <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+        <td class="container" style="font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; max-width: 580px; padding: 10px; width: 580px; margin: 0 auto;" width="580" valign="top">
+          <div class="content" style="box-sizing: border-box; display: block; margin: 0 auto; max-width: 580px; padding: 10px;">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background: #ffffff; border-radius: 3px; width: 100%;" width="100%">
+
+              <!-- START MAIN CONTENT AREA -->
+
+              <tr class="section">
+                <td class="wrapper" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px;" valign="top">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
+                    <tr>
+                      <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
+                        <img src="banner.jpg" alt="Useful alt text" width="600" height="300" border="0" style="border:0; outline:none; text-decoration:none; display:block;">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr class="section">
+                <td class="wrapper" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px;" valign="top">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background-color: #0079C1; color: white" width="100%">
+                    <tr>
+                      <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
+                        <p class="s6" style="text-indent: 0pt;text-align: left; padding-left: 100px;">This is for Advisors Only</p>
+                        <p class="s7" style="text-indent: 0pt;line-height: 140%;text-align: left; padding-left: 100px;">Join BMO Global Asset Management’s expanded Global Equity</p>
+                        <p class="s7" style="text-indent: 0pt;line-height: 140%;text-align: left; padding-left: 100px;">Team to discuss expertly crafted portfolio management strategies</p>
+                        <p class="s7" style="text-indent: 0pt;line-height: 140%;text-align: left; padding-left: 100px;">and upcoming investment solutions:</p>
+                        <p class="s7" style="padding-top: 11pt;text-indent: 0pt;text-align: left; padding-left: 100px;">BMO Global Innovators Fund*</p>
+                        <p class="s7" style="text-indent: 0pt;line-height: 26pt;text-align: left; padding-left: 100px;">BMO Global Income &amp; Growth Fund*</p>
+                        <p class="s7" style="text-indent: 0pt;line-height: 26pt;text-align: left; padding-left: 100px;">BMO Canadian Income &amp; Growth Fund*</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr class="section">
+                <td class="wrapper" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px;" valign="top">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
+                    <tr>
+                      <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
+                        <h2 class="col-heading">Speakers</h2>
+                        <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                        <p style="text-indent: 0pt;text-align: left;"><span/></p>
+                        <h1 style="padding-top: 4pt;padding-left: 60pt;text-indent: 0pt;text-align: left;" class="speaker">Sadiq S Adatia, FSA, FCIA, CFA</h1>
+                        <p style="padding-top: 3pt;padding-left: 60pt;text-indent: 0pt;text-align: left;" class="date">Chief Investment Officer (CIO), BMO Global Asset Management</p>
+                        <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                        <p style="text-indent: 0pt;text-align: left;"><span/></p>
+                        <h3 style="padding-top: 7pt;padding-left: 60pt;text-indent: 0pt;line-height: 92%;text-align: left;" class="speaker">Jeff Elliott, Ph.D, CFA, MBA</h3>
+                        <p style="padding-top: 4pt;padding-left: 60pt;text-indent: 0pt;line-height: 122%;text-align: left;" class="date">Portfolio Manager, Head of <i>Global Equity</i></p>
+                        <h3 style="padding-top: 5pt;padding-left: 60pt;text-indent: 0pt;line-height: 92%;text-align: left;" class="speaker">Jeremy Yeung, CFA</h3>
+                        <p style="text-indent: 0pt;text-align: left;"><span/></p>
+                        <p style="padding-top: 4pt;padding-left: 60pt;text-indent: 0pt;text-align: left;" class="date">Portfolio Manager,</p>
+                        <p style="padding-top: 2pt;padding-left: 60pt;text-indent: 0pt;text-align: left;" class="date">Global Equity</p>
+                        <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                        <p style="text-indent: 0pt;text-align: left;"><span/></p>
+                        <h3 style="padding-top: 12pt;padding-left: 60pt;text-indent: 0pt;line-height: 92%;text-align: left;" class="speaker">Marchello Holditch, CFA, CAIA</h3>
+                        <p style="padding-top: 4pt;padding-left: 60pt;text-indent: 0pt;line-height: 122%;text-align: left;" class="date">Director, Portfolio Manager, Multi-Asset Solutions</p>
+                        <h3 style="padding-top: 11pt;padding-left: 60pt;text-indent: 0pt;line-height: 92%;text-align: left;" class="speaker">Malcolm White, CFA</h3>
+                        <p style="text-indent: 0pt;text-align: left;"><span/></p>
+                        <p style="padding-top: 4pt;padding-left: 60pt;text-indent: 0pt;text-align: left;" class="date">Portfolio Manager,</p>
+                        <p style="padding-top: 2pt;padding-left: 60pt;text-indent: 0pt;text-align: left;" class="date">Global Equity</p>
+                      </td>
+                    </tr>
+
+                    <tr class="section">
+                        <h2 class="col-heading">Cities</h2>
+                        <div class="row">
+                            <div class="column">
+                              <h2 class="city">Victoria, BC</h2>
+                              <p class="date">Tues Nov 22</p>
+                            </div>
+                            <div class="column">
+                              <h2 class="city">Langley, BC</h2>
+                              <p class="date">Wed Nov 23</p>
+                            </div>
+                            <div class="column">
+                              <h2 class="city">Vancouver, BC</h2>
+                              <p class="date">Wed Nov 23</p>
+                            </div>
+                            <div class="column">
+                              <h2 class="city">Kelowna, BC</h2>
+                              <p class="date">Wed Nov 24</p>
+                            </div>
+                          </div>
+                    </tr>
+
+                    <tr class="section">
+                        <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
+                          <button name="button" type="button"
+                            style="margin: 16px; padding: 16px; margin-left: 210px; width: 180px; background-color: #ED1D24; color: white; border: none;border-radius: 4px;font-size: 16px">Register Now</button>
+                        </td>
+                      </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr class="section">
+                <td class="wrapper" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px;" valign="top">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
+                    <tr>
+                      <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
+                        <p style="padding-left: 25pt;text-indent: 0pt;text-align: left;">These events are open to all Advisors and on a first-come, first-served basis.</p>
+                        <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                        <p style="padding-left: 25pt;text-indent: 0pt;text-align: left;">CE Eligibility Pending</p>
+                        <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                        <p style="padding-left: 25pt;text-indent: 0pt;line-height: 155%;text-align: left;">*A preliminary prospectus relating to the fund has been filed with certain Canadian securities commissions or similar authorities. You cannot buy units of the fund until the relevant securities commissions or similar authorities issue receipts for the prospectus of the fund.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+          </div>
+        </td>
+        <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
